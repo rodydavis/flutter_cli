@@ -6,8 +6,8 @@
 
 import 'dart:convert';
 
-import 'package:flutter_cli/src/file_reader.dart';
-import 'package:flutter_cli/src/project_model.dart';
+import 'package:ngflutter/src/file_reader.dart';
+import 'package:ngflutter/src/project_model.dart';
 import 'package:path/path.dart' as path;
 import 'package:test/test.dart';
 

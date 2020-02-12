@@ -6,7 +6,7 @@
 
 import 'dart:async';
 
-import 'package:flutter_cli/src/project_model.dart';
+import 'package:ngflutter/src/project_model.dart';
 import 'package:path/path.dart' as path;
 
 import '../generator.dart';

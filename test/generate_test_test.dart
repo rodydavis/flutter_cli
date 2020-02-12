@@ -6,10 +6,10 @@
 
 import 'dart:convert';
 
-import 'package:flutter_cli/src/app_logger.dart';
-import 'package:flutter_cli/src/command_runner.dart';
-import 'package:flutter_cli/src/file_reader.dart';
-import 'package:flutter_cli/src/file_writer.dart';
+import 'package:ngflutter/src/app_logger.dart';
+import 'package:ngflutter/src/command_runner.dart';
+import 'package:ngflutter/src/file_reader.dart';
+import 'package:ngflutter/src/file_writer.dart';
 import 'package:path/path.dart' as path;
 import 'package:test/test.dart';
 

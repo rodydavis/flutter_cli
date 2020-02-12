@@ -6,9 +6,9 @@
 
 import 'dart:convert';
 
-import 'package:flutter_cli/src/exceptions.dart';
-import 'package:flutter_cli/src/file_reader.dart';
-import 'package:flutter_cli/src/package_uri_resolver.dart';
+import 'package:ngflutter/src/exceptions.dart';
+import 'package:ngflutter/src/file_reader.dart';
+import 'package:ngflutter/src/package_uri_resolver.dart';
 import 'package:path/path.dart' as path;
 import 'package:test/test.dart';
 
@@ -40,7 +40,7 @@ void main() {
     });
 
     test('should parse current project URI', () {
-      var filePath = resolver.resolve('package:flutter_cli/some_file.dart');
+      var filePath = resolver.resolve('package:ngflutter/some_file.dart');
       expect(filePath, equals(path.join('lib', 'some_file.dart')));
     });
 

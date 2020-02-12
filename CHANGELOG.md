@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.0
+
+- Added support for Flutter
+
 ## 0.1.2
 
 - Added support for `generate directive`

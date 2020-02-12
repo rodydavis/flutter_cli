@@ -5,9 +5,9 @@
 // https://developers.google.com/open-source/licenses/bsd
 
 import 'package:analyzer/analyzer.dart';
-import 'package:flutter_cli/src/visitors/flutter_component_visitor.dart';
-import 'package:flutter_cli/src/visitors/component_info.dart';
-import 'package:flutter_cli/src/visitors/dart_class_info.dart';
+import 'package:ngflutter/src/visitors/flutter_component_visitor.dart';
+import 'package:ngflutter/src/visitors/component_info.dart';
+import 'package:ngflutter/src/visitors/dart_class_info.dart';
 import 'package:test/test.dart';
 
 void main() {

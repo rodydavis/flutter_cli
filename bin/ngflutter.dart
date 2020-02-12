@@ -7,7 +7,7 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:flutter_cli/src/command_runner.dart';
+import 'package:ngflutter/src/command_runner.dart';
 import 'package:args/command_runner.dart';
 
 Future main(List<String> args) async {

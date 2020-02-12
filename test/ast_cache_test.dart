@@ -6,9 +6,9 @@
 
 import 'dart:convert';
 
-import 'package:flutter_cli/src/file_reader.dart';
-import 'package:flutter_cli/src/package_uri_resolver.dart';
-import 'package:flutter_cli/src/visitors/ast_cache.dart';
+import 'package:ngflutter/src/file_reader.dart';
+import 'package:ngflutter/src/package_uri_resolver.dart';
+import 'package:ngflutter/src/visitors/ast_cache.dart';
 import 'package:path/path.dart' as path;
 import 'package:test/test.dart';
 
