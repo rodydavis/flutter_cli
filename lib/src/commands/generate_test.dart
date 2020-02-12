@@ -10,14 +10,14 @@ import '../generators/test.dart';
 import '../path_util.dart';
 import 'command.dart';
 
-/// Handles the `generate test` ngdart command.
+/// Handles the `generate test` ngflutter command.
 class GenerateTestCommand extends NgDartCommand {
   static const _classOption = 'class';
   static const _testPathOption = 'path';
   static const _tagOption = 'tag';
 
   String get name => 'test';
-  String get description => 'Generate FlutterDart component test, '
+  String get description => 'Generate Flutter component test, '
       'this command should be run under root directory of the project.';
   String get invocation => '${NgDartCommand.binaryName} generate test '
       '<component/file/path> [--class <class name>] [--path <test/file/path>] '

@@ -10,7 +10,7 @@ import 'generate_test.dart';
 import 'package:flutter_cli/src/commands/generate_directive.dart';
 import 'package:flutter_cli/src/commands/generate_pipe.dart';
 
-/// Handles the `generate` ngdart command.
+/// Handles the `generate` ngflutter command.
 class GenerateCommand extends NgDartCommand {
   String get name => 'generate';
   String get description => 'Generate component or test.';

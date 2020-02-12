@@ -10,12 +10,12 @@ import '../generators/component.dart';
 import '../path_util.dart';
 import 'command.dart';
 
-/// Handles the `generate component` ngdart command.
+/// Handles the `generate component` ngflutter command.
 class GenerateComponentCommand extends NgDartCommand {
   static const _pathOption = 'path';
 
   String get name => 'component';
-  String get description => 'Generate FlutterDart component.';
+  String get description => 'Generate Flutter component.';
   String get invocation => '${NgDartCommand.binaryName} generate component '
       '<ComponentName> [--path <component/file/path>]';
 

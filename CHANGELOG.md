@@ -20,7 +20,7 @@
 
 ## 0.1.0
 
-- New implementation, support to create project, generate FlutterDart component and test. 
+- New implementation, support to create project, generate Flutter component and test. 
 
 ## 0.0.2
 

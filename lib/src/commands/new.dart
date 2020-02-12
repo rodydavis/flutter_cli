@@ -10,13 +10,13 @@ import '../generators/project.dart';
 import '../path_util.dart';
 import 'command.dart';
 
-/// Handles the `new` ngdart command.
+/// Handles the `new` ngflutter command.
 class NewProjectCommand extends NgDartCommand {
   static const _rootComponentOption = 'root_component';
   static const _pathOption = 'path';
 
   String get name => 'new';
-  String get description => 'Create an FlutterDart project.';
+  String get description => 'Create an Flutter project.';
   String get invocation => '${NgDartCommand.binaryName} new <project_name> '
       '[--path <project/path>] [--root_component <RootComponentName>]';
 

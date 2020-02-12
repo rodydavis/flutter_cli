@@ -14,7 +14,7 @@ import 'package:path/path.dart' as path;
 import 'package:test/test.dart';
 
 void main() {
-  group('ngdart', () {
+  group('ngflutter', () {
     AppLoggerMock logger;
     FileWriterMock writer;
     FileReader.reader = new FileReaderMock();

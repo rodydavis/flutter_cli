@@ -10,12 +10,12 @@ import '../generators/pipe.dart';
 import '../path_util.dart';
 import 'command.dart';
 
-/// Handles the `generate pipe` ngdart command.
+/// Handles the `generate pipe` ngflutter command.
 class GeneratePipeCommand extends NgDartCommand {
   static const _pathOption = 'path';
 
   String get name => 'pipe';
-  String get description => 'Generate FlutterDart pipe.';
+  String get description => 'Generate Flutter pipe.';
   String get invocation => '${NgDartCommand.binaryName} generate pipe '
       '<PipeName> [--path <pipe/file/path>]';
 

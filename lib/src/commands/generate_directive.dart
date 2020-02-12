@@ -10,12 +10,12 @@ import '../generators/directive.dart';
 import '../path_util.dart';
 import 'command.dart';
 
-/// Handles the `generate directive` ngdart command.
+/// Handles the `generate directive` ngflutter command.
 class GenerateDirectiveCommand extends NgDartCommand {
   static const _pathOption = 'path';
 
   String get name => 'directive';
-  String get description => 'Generate FlutterDart directive.';
+  String get description => 'Generate Flutter directive.';
   String get invocation => '${NgDartCommand.binaryName} generate directive '
       '<DirectiveName> [--path <directive/file/path>]';
 

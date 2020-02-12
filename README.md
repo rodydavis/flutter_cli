@@ -1,10 +1,10 @@
-## FlutterDart CLI
+## Flutter CLI
 
 [![Pub Package](https://img.shields.io/pub/v/flutter_cli.svg)](https://pub.dartlang.org/packages/flutter_cli)
 [![Build Status](https://travis-ci.org/google/flutter_cli.svg?branch=master)](https://travis-ci.org/google/flutter_cli)
 
-A command line interface for [FlutterDart][webdev_flutter].
-It can scaffold a skeleton FlutterDart project, component, and test with
+A command line interface for [Flutter][webdev_flutter].
+It can scaffold a skeleton Flutter project, component, and test with
 [page object][page_object].
 
 ## Installation
@@ -26,22 +26,22 @@ pub global activate webdev
 ## Usage
 
 ```bash
-ngdart help
+ngflutter help
 ```
 
-For help on specific command, run `ngdart help [command name]`
+For help on specific command, run `ngflutter help [command name]`
 For example:
 
 ```bash
-ngdart help generate test
+ngflutter help generate test
 ```
 
 will show how to use command `generate test`.
 
-### Generating FlutterDart project
+### Generating Flutter project
 
 ```bash
-ngdart new project_name
+ngflutter new project_name
 cd project_name
 pub get
 webdev serve
@@ -54,7 +54,7 @@ the project.
 ### Generating component
 
 ```bash
-ngdart generate component AnotherComponent
+ngflutter generate component AnotherComponent
 ```
 This command will generate component under folder `lib/`.
 You can use option `-p` to change the folder.
@@ -63,7 +63,7 @@ You can use option `-p` to change the folder.
 ### Generating test
 
 ```bash
-ngdart generate test lib/app_component.dart
+ngflutter generate test lib/app_component.dart
 ```
 
 Command above will generate 2 files. One is page object file

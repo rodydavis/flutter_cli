@@ -9,9 +9,9 @@ import 'package:args/command_runner.dart';
 
 import '../entity_name.dart';
 
-/// Base class for commands for ngdart executable.
+/// Base class for commands for ngflutter executable.
 abstract class NgDartCommand extends Command {
-  static const binaryName = 'ngdart';
+  static const binaryName = 'ngflutter';
   ArgParser get argParser => _argParser;
   final _argParser = new ArgParser(allowTrailingOptions: true);
 
