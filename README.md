@@ -1,7 +1,7 @@
 ## Flutter CLI
 
-[![Pub Package](https://img.shields.io/pub/v/flutter_cli.svg)](https://pub.dartlang.org/packages/flutter_cli)
-[![Build Status](https://travis-ci.org/google/flutter_cli.svg?branch=master)](https://travis-ci.org/google/flutter_cli)
+[![Pub Package](https://img.shields.io/pub/v/ngflutter.svg)](https://pub.dartlang.org/packages/ngflutter)
+[![Build Status](https://travis-ci.org/google/ngflutter.svg?branch=master)](https://travis-ci.org/google/ngflutter)
 
 A command line interface for [Flutter][webdev_flutter].
 It can scaffold a skeleton Flutter project, component, and test with
@@ -12,14 +12,14 @@ It can scaffold a skeleton Flutter project, component, and test with
 To install:
 
 ```bash
-pub global activate flutter_cli
+pub global activate ngflutter
 pub global activate webdev
 ```
 
 To update:
 
 ```bash
-pub global activate flutter_cli
+pub global activate ngflutter
 pub global activate webdev
 ```
 

@@ -5,7 +5,7 @@ authors:
 - Jing Bian <jingbian@google.com>
 - Jonah Williams <jonahwilliams@google.com>
 - Rody Davis <rody.davis.jr@gmail.com>
-homepage: https://github.com/rodydavis/flutter_cli
+homepage: https://github.com/rodydavis/ngflutter
 description: Scaffolding tool for Flutter
 environment:
   sdk: '>=2.0.0-dev.69.0 <3.0.0'
