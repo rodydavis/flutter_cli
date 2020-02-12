@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.0
+
+- Fixing Bugs Related to dart2native
+
 ## 0.3.1
 
 - Added support for Flutter

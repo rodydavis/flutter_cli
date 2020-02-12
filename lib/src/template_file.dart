@@ -9,6 +9,7 @@ import 'dart:io';
 import "dart:convert" show utf8;
 
 // import 'package:analyzer/file_system/file_system.dart';
+// import 'package:flutter/services.dart';
 import 'package:reflected_mustache/mustache.dart';
 // import 'package:resource/resource.dart' show Resource;
 
@@ -27,13 +28,12 @@ class TemplateFile {
 
   /// Renders template file on [_path] with values from [_data].
   Future<String> renderString() async {
-    var uri =
-        fixUri('lib/templates/$_path'); //package:ngflutter/templates/$_path
-    print("Uri: $uri");
+    var uri = fixUri('lib/templates/$_path');
+    // var uri = fixUri('package:ngflutter/templates/$_path');
+    // var content = await rootBundle.loadString(uri);
     var resource = new File(uri);
     var content = await resource.readAsString(encoding: utf8);
     var template = new Template(content);
-    print("_data: ${_data.toMap()}");
     return template.renderString(_data.toMap());
   }
 }
