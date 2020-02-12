@@ -11,19 +11,19 @@ import 'package:path/path.dart' as path;
 import '../entity_name.dart';
 import '../generator.dart';
 
-/// Generator for Flutter widget.
+/// Generator for Flutter Widget.
 class WidgetGenerator extends Generator {
   static const _templateFolder = 'widget';
   static const List<String> _templateFileNames = const [
     'widget.dart.mustache',
   ];
 
-  /// Class name of this widget.
+  /// Class name of this Widget.
   final String className;
 
   final String selector;
 
-  /// widget file name without extension.
+  /// Widget file name without extension.
   final String targetName;
 
   WidgetGenerator._(
