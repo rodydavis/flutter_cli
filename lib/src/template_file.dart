@@ -7,7 +7,7 @@
 import 'dart:async';
 import "dart:convert" show utf8;
 
-import 'package:mustache/mustache.dart';
+import 'package:reflected_mustache/mustache.dart';
 import 'package:resource/resource.dart' show Resource;
 
 import 'path_util.dart';

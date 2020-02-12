@@ -1,21 +1,22 @@
 name: ngflutter
-version: 0.3.1
+version: 0.3.2
 authors:
-- Tianfei Zhu <tianfei@google.com>
-- Jing Bian <jingbian@google.com>
-- Jonah Williams <jonahwilliams@google.com>
-- Rody Davis <rody.davis.jr@gmail.com>
+  - Tianfei Zhu <tianfei@google.com>
+  - Jing Bian <jingbian@google.com>
+  - Jonah Williams <jonahwilliams@google.com>
+  - Rody Davis <rody.davis.jr@gmail.com>
 homepage: https://github.com/rodydavis/ngflutter
 description: Scaffolding tool for Flutter
 environment:
-  sdk: '>=2.0.0-dev.69.0 <3.0.0'
+  sdk: ">=2.0.0-dev.69.0 <3.0.0"
 executables:
   ngflutter:
 dependencies:
   analyzer: ^0.32.4
   ansicolor: ^1.0.2
   # args: ^1.4.4
-  mustache: ^1.0.1
+  # mustache: ^1.0.1
+  reflected_mustache: ^1.0.11
   logging: ^0.11.3+2
   path: ^1.6.2
   resource: ^2.1.5
