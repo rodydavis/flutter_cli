@@ -5,8 +5,8 @@
 // https://developers.google.com/open-source/licenses/bsd
 
 import 'package:analyzer/analyzer.dart';
-import 'package:angular_cli/src/visitors/binding_helper.dart';
-import 'package:angular_cli/src/visitors/binding_info.dart';
+import 'package:flutter_cli/src/visitors/binding_helper.dart';
+import 'package:flutter_cli/src/visitors/binding_info.dart';
 import 'package:test/test.dart';
 
 void main() {

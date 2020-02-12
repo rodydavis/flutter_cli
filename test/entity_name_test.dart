@@ -4,7 +4,7 @@
 // license that can be found in the LICENSE file or at
 // https://developers.google.com/open-source/licenses/bsd
 
-import 'package:angular_cli/src/entity_name.dart';
+import 'package:flutter_cli/src/entity_name.dart';
 import 'package:test/test.dart';
 
 void main() {

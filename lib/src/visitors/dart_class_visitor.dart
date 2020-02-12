@@ -84,7 +84,7 @@ class DartClassVisitor extends RecursiveAstVisitor {
     for (var parameter in constructor.parameters.parameters) {
       // Annotations like ViewQuery, ViewChild, and ViewChildren
       // will use a type like QueryList<SomeComponent>, such dependency can
-      // be handled by angular.
+      // be handled by flutter.
       var isOptional = parameter.metadata.any((annotation) {
         var name = extractName(annotation.name);
         return name == 'Optional' || name == 'SkipSelf';

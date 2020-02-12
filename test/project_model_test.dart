@@ -6,8 +6,8 @@
 
 import 'dart:convert';
 
-import 'package:angular_cli/src/file_reader.dart';
-import 'package:angular_cli/src/project_model.dart';
+import 'package:flutter_cli/src/file_reader.dart';
+import 'package:flutter_cli/src/project_model.dart';
 import 'package:path/path.dart' as path;
 import 'package:test/test.dart';
 
@@ -62,7 +62,7 @@ var _files = [
     'content': '''
       library test_a;
 
-      import 'package:angular/angular.dart';
+      import 'package:flutter/flutter.dart';
       import 'a1.dart';
 
       part 'src/d.dart';
@@ -94,7 +94,7 @@ var _files = [
   {
     'path': path.join('a', 'lib', 'a1.dart'),
     'content': '''
-      import 'package:angular/angular.dart';
+      import 'package:flutter/flutter.dart';
 
       const someThing = const [
         const Provider(C, useValue: 'test')

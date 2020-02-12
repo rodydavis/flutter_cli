@@ -11,7 +11,7 @@ import 'package:path/path.dart' as path;
 import '../entity_name.dart';
 import '../generator.dart';
 
-/// Generator for Angular component.
+/// Generator for Flutter component.
 class ComponentGenerator extends Generator {
   static const _templateFolder = 'component';
   static const List<String> _templateFileNames = const [

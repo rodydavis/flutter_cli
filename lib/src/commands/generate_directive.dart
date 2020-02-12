@@ -15,7 +15,7 @@ class GenerateDirectiveCommand extends NgDartCommand {
   static const _pathOption = 'path';
 
   String get name => 'directive';
-  String get description => 'Generate AngularDart directive.';
+  String get description => 'Generate FlutterDart directive.';
   String get invocation => '${NgDartCommand.binaryName} generate directive '
       '<DirectiveName> [--path <directive/file/path>]';
 

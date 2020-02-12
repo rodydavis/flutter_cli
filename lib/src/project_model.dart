@@ -10,7 +10,7 @@ import 'exceptions.dart';
 import 'file_reader.dart';
 import 'package_uri_resolver.dart';
 import 'path_util.dart';
-import 'visitors/angular_component_visitor.dart';
+import 'visitors/flutter_component_visitor.dart';
 import 'visitors/ast_cache.dart';
 import 'visitors/binding_info.dart';
 import 'visitors/binding_visitor.dart';
@@ -22,7 +22,7 @@ import 'visitors/visit_resources.dart';
 /// Project model built from AST cache.
 ///
 /// The project model built will contains all referenced Dart classes,
-/// all Angular component classes, and all binding modules.
+/// all Flutter component classes, and all binding modules.
 class ProjectModel {
   final String projectName;
 
@@ -39,7 +39,7 @@ class ProjectModel {
   /// Map from type name to info for each Dart class.
   final Map<String, DartClassInfo> dartClasses;
 
-  /// Map from type name to info of each Angular component.
+  /// Map from type name to info of each Flutter component.
   final Map<String, ComponentInfo> components;
 
   /// Map from var name to info of bindings.
@@ -75,7 +75,7 @@ class ProjectModel {
 
     var components = <String, ComponentInfo>{};
     components.addAll(visitUris<ComponentInfo>(
-        asts, (_, out) => new AngularComponentVisitor(dartClasses, out)));
+        asts, (_, out) => new FlutterComponentVisitor(dartClasses, out)));
 
     var modules = <String, ModuleInfo>{};
     modules.addAll(visitUris<ModuleInfo>(

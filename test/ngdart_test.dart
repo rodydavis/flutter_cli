@@ -4,10 +4,10 @@
 // license that can be found in the LICENSE file or at
 // https://developers.google.com/open-source/licenses/bsd
 
-import 'package:angular_cli/src/app_logger.dart';
-import 'package:angular_cli/src/command_runner.dart';
-import 'package:angular_cli/src/file_writer.dart';
-import 'package:angular_cli/src/path_util.dart';
+import 'package:flutter_cli/src/app_logger.dart';
+import 'package:flutter_cli/src/command_runner.dart';
+import 'package:flutter_cli/src/file_writer.dart';
+import 'package:flutter_cli/src/path_util.dart';
 import 'package:args/command_runner.dart';
 import 'package:path/path.dart' as path;
 import 'package:test/test.dart';
@@ -53,8 +53,8 @@ void main() {
     });
 
     test('should generate project with default path', () async {
-      final projectPath = path.join('.', 'hello_angular');
-      await runner.run(['-v', 'new', 'HelloAngular']);
+      final projectPath = path.join('.', 'hello_flutter');
+      await runner.run(['-v', 'new', 'HelloFlutter']);
       expect(logger.verbose, isTrue);
       expect(writer.filesWritten.length, 8);
       expect(writer.filesWritten[0].startsWith(projectPath), isTrue);
@@ -64,12 +64,12 @@ void main() {
 
     test('should generate project with specified path', () async {
       final projectPath = path.join('some', 'path');
-      await runner.run(['new', 'HelloAngular', '-p $projectPath']);
+      await runner.run(['new', 'HelloFlutter', '-p $projectPath']);
       expect(logger.verbose, isFalse);
       expect(writer.filesWritten.length, 8);
       expect(
           writer.filesWritten[0]
-              .startsWith(path.join(projectPath, 'hello_angular')),
+              .startsWith(path.join(projectPath, 'hello_flutter')),
           isTrue);
       expect(logger.warningCount, 0);
       expect(logger.severeCount, 0);

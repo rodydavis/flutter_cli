@@ -17,7 +17,7 @@ class GenerateTestCommand extends NgDartCommand {
   static const _tagOption = 'tag';
 
   String get name => 'test';
-  String get description => 'Generate AngularDart component test, '
+  String get description => 'Generate FlutterDart component test, '
       'this command should be run under root directory of the project.';
   String get invocation => '${NgDartCommand.binaryName} generate test '
       '<component/file/path> [--class <class name>] [--path <test/file/path>] '
@@ -30,7 +30,7 @@ class GenerateTestCommand extends NgDartCommand {
   GenerateTestCommand() {
     argParser.addOption(_classOption,
         abbr: 'c',
-        help: 'Angular component class to be tested. '
+        help: 'Flutter component class to be tested. '
             'Will select one from the specified file if it is null.',
         defaultsTo: null);
     argParser.addOption(_testPathOption,
@@ -42,7 +42,7 @@ class GenerateTestCommand extends NgDartCommand {
   Future run() async {
     await new TestGenerator(
             _testTag,
-            readArg('path for Angular component file is needed.'),
+            readArg('path for Flutter component file is needed.'),
             _classUnderTest,
             _testPath)
         .generate();

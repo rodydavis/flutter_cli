@@ -12,7 +12,7 @@ import '../entity_name.dart';
 import '../generator.dart';
 import 'component.dart';
 
-/// Generator for sample Angular project.
+/// Generator for sample Flutter project.
 class ProjectGenerator extends Generator {
   static const _templateFolder = 'project';
   static final List<String> _templateFilePaths = [

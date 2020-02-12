@@ -16,7 +16,7 @@ import 'utils.dart';
 
 /// Visitor to collect value of providers, selector, directives,
 /// and templateUrl in @Component or @View.
-class AngularComponentVisitor extends RecursiveAstVisitor {
+class FlutterComponentVisitor extends RecursiveAstVisitor {
   final Map<String, DartClassInfo> _classes;
 
   final Map<String, ComponentInfo> _components;
@@ -24,7 +24,7 @@ class AngularComponentVisitor extends RecursiveAstVisitor {
   // Map to save variables that may be used in @Component.
   final Map<String, Expression> _variables = new Map();
 
-  AngularComponentVisitor(this._classes, this._components);
+  FlutterComponentVisitor(this._classes, this._components);
 
   /// Collects top level variables that may be used in @Component.
   @override

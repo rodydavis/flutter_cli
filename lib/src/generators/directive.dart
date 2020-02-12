@@ -11,7 +11,7 @@ import 'package:path/path.dart' as path;
 import '../entity_name.dart';
 import '../generator.dart';
 
-/// Generator for Angular directive.
+/// Generator for Flutter directive.
 class DirectiveGenerator extends Generator {
   static const _templateFolder = 'directive';
   static const _templateFileName = 'directive.dart.mustache';

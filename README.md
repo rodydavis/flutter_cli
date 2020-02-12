@@ -1,10 +1,10 @@
-## AngularDart CLI
+## FlutterDart CLI
 
-[![Pub Package](https://img.shields.io/pub/v/angular_cli.svg)](https://pub.dartlang.org/packages/angular_cli)
-[![Build Status](https://travis-ci.org/google/angular_cli.svg?branch=master)](https://travis-ci.org/google/angular_cli)
+[![Pub Package](https://img.shields.io/pub/v/flutter_cli.svg)](https://pub.dartlang.org/packages/flutter_cli)
+[![Build Status](https://travis-ci.org/google/flutter_cli.svg?branch=master)](https://travis-ci.org/google/flutter_cli)
 
-A command line interface for [AngularDart][webdev_angular].
-It can scaffold a skeleton AngularDart project, component, and test with
+A command line interface for [FlutterDart][webdev_flutter].
+It can scaffold a skeleton FlutterDart project, component, and test with
 [page object][page_object].
 
 ## Installation
@@ -12,14 +12,14 @@ It can scaffold a skeleton AngularDart project, component, and test with
 To install:
 
 ```bash
-pub global activate angular_cli
+pub global activate flutter_cli
 pub global activate webdev
 ```
 
 To update:
 
 ```bash
-pub global activate angular_cli
+pub global activate flutter_cli
 pub global activate webdev
 ```
 
@@ -38,7 +38,7 @@ ngdart help generate test
 
 will show how to use command `generate test`.
 
-### Generating AngularDart project
+### Generating FlutterDart project
 
 ```bash
 ngdart new project_name
@@ -68,7 +68,7 @@ ngdart generate test lib/app_component.dart
 
 Command above will generate 2 files. One is page object file
 and the other one is test file.
-Test generated is using [angular_test][pub_angular_test]
+Test generated is using [flutter_test][pub_flutter_test]
 and [test][pub_test] package.
 
 Use command
@@ -79,7 +79,7 @@ pub run build_runner test --fail-on-severe -- -p chrome
 
 to run generated test with Chrome.
 
-[webdev_angular]: https://webdev.dartlang.org/angular
+[webdev_flutter]: https://webdev.dartlang.org/flutter
 [page_object]: https://martinfowler.com/bliki/PageObject.html
-[pub_angular_test]: https://pub.dartlang.org/packages/angular_test
+[pub_flutter_test]: https://pub.dartlang.org/packages/flutter_test
 [pub_test]: https://pub.dartlang.org/packages/test

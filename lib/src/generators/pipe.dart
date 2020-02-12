@@ -11,7 +11,7 @@ import 'package:path/path.dart' as path;
 import '../entity_name.dart';
 import '../generator.dart';
 
-/// Generator for Angular pipe.
+/// Generator for Flutter pipe.
 class PipeGenerator extends Generator {
   static const _templateFolder = 'pipe';
   static const _templateFileName = 'pipe.dart.mustache';

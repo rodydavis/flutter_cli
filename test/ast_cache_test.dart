@@ -6,9 +6,9 @@
 
 import 'dart:convert';
 
-import 'package:angular_cli/src/file_reader.dart';
-import 'package:angular_cli/src/package_uri_resolver.dart';
-import 'package:angular_cli/src/visitors/ast_cache.dart';
+import 'package:flutter_cli/src/file_reader.dart';
+import 'package:flutter_cli/src/package_uri_resolver.dart';
+import 'package:flutter_cli/src/visitors/ast_cache.dart';
 import 'package:path/path.dart' as path;
 import 'package:test/test.dart';
 
@@ -55,7 +55,7 @@ var _files = [
     'public_uri': 'package:b/b.dart',
     'path': path.join('b', 'lib', 'b.dart'),
     'content': '''
-      import 'package:angular/angular.dart';
+      import 'package:flutter/flutter.dart';
     '''
   },
   {
@@ -80,7 +80,7 @@ var _files = [
     'public_uri': 'package:a/src/a3.dart',
     'path': path.join('a', 'lib', 'src', 'a3.dart'),
     'content': '''
-      import 'package:angular/angular.dart';
+      import 'package:flutter/flutter.dart';
     '''
   },
   {
@@ -88,7 +88,7 @@ var _files = [
     'public_uri': 'package:a/a.dart',
     'path': path.join('a', 'lib', 'src', 'a4.dart'),
     'content': '''
-      import 'package:angular/angular.dart';
+      import 'package:flutter/flutter.dart';
     '''
   }
 ];

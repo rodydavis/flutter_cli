@@ -10,7 +10,7 @@ import 'package:ansicolor/ansicolor.dart';
 import 'package:logging/logging.dart';
 
 class AppLogger {
-  static AppLogger log = new AppLogger._('AngularDartCli');
+  static AppLogger log = new AppLogger._('FlutterDartCli');
 
   final Logger _logger;
 

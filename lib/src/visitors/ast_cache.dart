@@ -100,8 +100,8 @@ class AstCache {
       // Skips dart imports.
       if (referencedUri.startsWith('dart:')) continue;
       if (referencedUri.startsWith('package:')) {
-        // Skips Angular imports.
-        if (getPackageName(referencedUri) == 'angular') continue;
+        // Skips Flutter imports.
+        if (getPackageName(referencedUri) == 'flutter') continue;
       } else {
         // Relative path.
         var directoryName = path.posix.dirname(getPath(uri));

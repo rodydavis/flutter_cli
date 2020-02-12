@@ -16,7 +16,7 @@ class NewProjectCommand extends NgDartCommand {
   static const _pathOption = 'path';
 
   String get name => 'new';
-  String get description => 'Create an AngularDart project.';
+  String get description => 'Create an FlutterDart project.';
   String get invocation => '${NgDartCommand.binaryName} new <project_name> '
       '[--path <project/path>] [--root_component <RootComponentName>]';
 

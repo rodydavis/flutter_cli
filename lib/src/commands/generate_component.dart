@@ -15,7 +15,7 @@ class GenerateComponentCommand extends NgDartCommand {
   static const _pathOption = 'path';
 
   String get name => 'component';
-  String get description => 'Generate AngularDart component.';
+  String get description => 'Generate FlutterDart component.';
   String get invocation => '${NgDartCommand.binaryName} generate component '
       '<ComponentName> [--path <component/file/path>]';
 

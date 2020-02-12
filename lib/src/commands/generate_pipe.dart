@@ -15,7 +15,7 @@ class GeneratePipeCommand extends NgDartCommand {
   static const _pathOption = 'path';
 
   String get name => 'pipe';
-  String get description => 'Generate AngularDart pipe.';
+  String get description => 'Generate FlutterDart pipe.';
   String get invocation => '${NgDartCommand.binaryName} generate pipe '
       '<PipeName> [--path <pipe/file/path>]';
 

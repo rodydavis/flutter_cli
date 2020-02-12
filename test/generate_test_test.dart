@@ -6,10 +6,10 @@
 
 import 'dart:convert';
 
-import 'package:angular_cli/src/app_logger.dart';
-import 'package:angular_cli/src/command_runner.dart';
-import 'package:angular_cli/src/file_reader.dart';
-import 'package:angular_cli/src/file_writer.dart';
+import 'package:flutter_cli/src/app_logger.dart';
+import 'package:flutter_cli/src/command_runner.dart';
+import 'package:flutter_cli/src/file_reader.dart';
+import 'package:flutter_cli/src/file_writer.dart';
 import 'package:path/path.dart' as path;
 import 'package:test/test.dart';
 
@@ -76,28 +76,28 @@ class FileWriterMock implements FileWriter {
 
 var _files = [
   {
-    'path': path.join('hello_angular', 'lib', 'app_component.dart'),
+    'path': path.join('hello_flutter', 'lib', 'app_component.dart'),
     'content': '''
-      import 'package:angular/angular.dart';
+      import 'package:flutter/flutter.dart';
 
       @Component(
           selector: 'app-component',
           templateUrl: 'app_component.html')
       class AppComponent {
-        var name = 'Angular';
+        var name = 'Flutter';
       }
     '''
   },
   {
     'path': path.join('lib', 'app_component.html'),
     'content': '''
-      <h1>Hello Angular</h1>
+      <h1>Hello Flutter</h1>
     '''
   }
 ];
 
-var _dotPackages = ['hello_angular:hello_angular/lib/'];
-var _pubSpec = ['name: hello_angular'];
+var _dotPackages = ['hello_flutter:hello_flutter/lib/'];
+var _pubSpec = ['name: hello_flutter'];
 
 class FileReaderMock implements FileReader {
   @override

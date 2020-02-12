@@ -5,23 +5,23 @@
 // https://developers.google.com/open-source/licenses/bsd
 
 import 'package:analyzer/analyzer.dart';
-import 'package:angular_cli/src/visitors/angular_component_visitor.dart';
-import 'package:angular_cli/src/visitors/component_info.dart';
-import 'package:angular_cli/src/visitors/dart_class_info.dart';
+import 'package:flutter_cli/src/visitors/flutter_component_visitor.dart';
+import 'package:flutter_cli/src/visitors/component_info.dart';
+import 'package:flutter_cli/src/visitors/dart_class_info.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group('AngularComponentVisitor', () {
+  group('FlutterComponentVisitor', () {
     Map<String, ComponentInfo> visit(
         Map<String, DartClassInfo> classes, String content) {
       var compilationUnit = parseCompilationUnit(content);
       var out = <String, ComponentInfo>{};
-      var visitor = new AngularComponentVisitor(classes, out);
+      var visitor = new FlutterComponentVisitor(classes, out);
       compilationUnit.accept(visitor);
       return out;
     }
 
-    test('should parse an Angular component', () {
+    test('should parse an Flutter component', () {
       final classes = <String, DartClassInfo>{
         'A': new DartClassInfo('A'),
         'B': new DartClassInfo('B'),
