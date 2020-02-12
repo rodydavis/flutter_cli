@@ -28,4 +28,6 @@ abstract class Generator {
 
   /// Generates files defined for this generator.
   Future generate();
+
+  Map<String, String> toMap();
 }

@@ -12,6 +12,7 @@ import "dart:convert" show utf8;
 import 'package:reflected_mustache/mustache.dart';
 // import 'package:resource/resource.dart' show Resource;
 
+import 'generator.dart';
 import 'path_util.dart';
 
 /// Template file class wrapping operations on mustache template.
@@ -20,7 +21,7 @@ class TemplateFile {
   final String _path;
 
   /// Data for this template.
-  final dynamic _data;
+  final Generator _data;
 
   TemplateFile(this._path, this._data);
 
@@ -32,8 +33,8 @@ class TemplateFile {
     var resource = new File(uri);
     var content = await resource.readAsString(encoding: utf8);
     var template = new Template(content);
-    print("_data: $_data");
-    return template.renderString(_data);
+    print("_data: ${_data.toMap()}");
+    return template.renderString(_data.toMap());
   }
 }
 

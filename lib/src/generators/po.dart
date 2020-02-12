@@ -64,4 +64,13 @@ class PoGenerator extends Generator {
   Future generate() async {
     await renderAndWriteTemplates(_getTemplateTargetPaths());
   }
+
+  @override
+  Map<String, String> toMap() {
+    return {
+      "componentPath": componentPath,
+      "poClassName": poClassName,
+      "poFileName": poFileName
+    };
+  }
 }

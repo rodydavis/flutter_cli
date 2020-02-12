@@ -52,4 +52,13 @@ class DirectiveGenerator extends Generator {
   Future generate() async {
     await renderAndWriteTemplates(_getTemplateTargetPaths());
   }
+
+  @override
+  Map<String, String> toMap() {
+    return {
+      "className": className,
+      "selector": selector,
+      "targetName": targetName,
+    };
+  }
 }

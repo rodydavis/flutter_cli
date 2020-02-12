@@ -34,8 +34,11 @@ class WidgetGenerator extends Generator {
     ReCase classEntityName,
     String destinationFolder,
   ) {
-    return new WidgetGenerator._(classEntityName.camelCase,
-        classEntityName.paramCase, classEntityName.snakeCase, destinationFolder);
+    return new WidgetGenerator._(
+        classEntityName.pascalCase,
+        classEntityName.paramCase,
+        classEntityName.snakeCase,
+        destinationFolder);
   }
 
   // Gets a map from template file name to target file name.
@@ -52,5 +55,14 @@ class WidgetGenerator extends Generator {
   @override
   Future generate() async {
     await renderAndWriteTemplates(_getTemplateTargetPaths());
+  }
+
+  @override
+  Map<String, String> toMap() {
+    return {
+      "className": className,
+      "selector": selector,
+      "targetName": targetName,
+    };
   }
 }

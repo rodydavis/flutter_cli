@@ -52,4 +52,13 @@ class PipeGenerator extends Generator {
   Future generate() async {
     await renderAndWriteTemplates(_getTemplateTargetPaths());
   }
+
+  @override
+  Map<String, String> toMap() {
+    return {
+      "className": className,
+      "pipeName": pipeName,
+      "targetName": targetName,
+    };
+  }
 }

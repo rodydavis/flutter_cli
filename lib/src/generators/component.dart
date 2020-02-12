@@ -35,7 +35,7 @@ class ComponentGenerator extends Generator {
     ReCase classEntityName,
     String destinationFolder,
   ) {
-    return new ComponentGenerator._(classEntityName.camelCase,
+    return new ComponentGenerator._(classEntityName.pascalCase,
         classEntityName.paramCase, classEntityName.snakeCase, destinationFolder);
   }
 
@@ -53,5 +53,14 @@ class ComponentGenerator extends Generator {
   @override
   Future generate() async {
     await renderAndWriteTemplates(_getTemplateTargetPaths());
+  }
+
+  @override
+  Map<String, String> toMap() {
+    return {
+      "className": className,
+      "selector": selector,
+      "targetName": targetName,
+    };
   }
 }

@@ -34,8 +34,8 @@ class ProjectGenerator extends Generator {
       this.name, this.description, this.component, String destinationFolder)
       : super(destinationFolder);
 
-  factory ProjectGenerator(ReCase projectEntityName,
-      String destinationFolder, ReCase componentClassEntityName) {
+  factory ProjectGenerator(ReCase projectEntityName, String destinationFolder,
+      ReCase componentClassEntityName) {
     destinationFolder =
         path.join(destinationFolder, projectEntityName.snakeCase);
     var component = new ComponentGenerator(
@@ -59,5 +59,13 @@ class ProjectGenerator extends Generator {
   Future generate() async {
     await renderAndWriteTemplates(_getTemplateTargetPaths());
     await component.generate();
+  }
+
+  @override
+  Map<String, String> toMap() {
+    return {
+      "name": name,
+      "description": description,
+    };
   }
 }

@@ -60,4 +60,12 @@ class TestGenerator extends Generator {
     await renderAndWriteTemplates(_getTemplateTargetPaths());
     await poGenerator.generate();
   }
+
+  @override
+  Map<String, String> toMap() {
+    return {
+      "tag": tag,
+      "componentPath": componentPath,
+    };
+  }
 }
