@@ -4,11 +4,13 @@
 // license that can be found in the LICENSE file or at
 // https://developers.google.com/open-source/licenses/bsd
 
+
 import 'command.dart';
 import 'generate_component.dart';
 import 'generate_test.dart';
 import 'package:ngflutter/src/commands/generate_directive.dart';
 import 'package:ngflutter/src/commands/generate_pipe.dart';
+import 'package:ngflutter/src/commands/generate_widget.dart';
 
 /// Handles the `generate` ngflutter command.
 class GenerateCommand extends NgDartCommand {
@@ -21,5 +23,6 @@ class GenerateCommand extends NgDartCommand {
     addSubcommand(new GenerateTestCommand());
     addSubcommand(new GenerateDirectiveCommand());
     addSubcommand(new GeneratePipeCommand());
+    addSubcommand(new GenerateWidgetCommand());
   }
 }

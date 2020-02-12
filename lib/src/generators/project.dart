@@ -17,8 +17,7 @@ class ProjectGenerator extends Generator {
   static const _templateFolder = 'project';
   static final List<String> _templateFilePaths = [
     path.join('web', 'index.html.mustache'),
-    path.join('web', 'main.dart.mustache'),
-    path.join('web', 'styles.css.mustache'),
+    path.join('lib', 'main.dart.mustache'),
     'analysis_options.yaml',
     '.gitignore',
     'pubspec.yaml.mustache',
