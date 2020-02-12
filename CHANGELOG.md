@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.0
+## 0.3.1
 
 - Added support for Flutter
 
