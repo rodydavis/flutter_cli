@@ -7,8 +7,8 @@
 import 'dart:async';
 
 import 'package:path/path.dart' as path;
+import 'package:recase/recase.dart';
 
-import '../entity_name.dart';
 import '../generator.dart';
 
 /// Generator for Flutter directive.
@@ -29,13 +29,13 @@ class DirectiveGenerator extends Generator {
       : super(destinationFolder);
 
   factory DirectiveGenerator(
-    EntityName classEntityName,
+    ReCase classEntityName,
     String destinationFolder,
   ) {
     return new DirectiveGenerator._(
-        classEntityName.camelCased,
-        classEntityName.lowerCamelCased,
-        classEntityName.underscored,
+        classEntityName.camelCase,
+        classEntityName.camelCase.toLowerCase(),
+        classEntityName.snakeCase,
         destinationFolder);
   }
 

@@ -7,8 +7,8 @@
 import 'dart:async';
 
 import 'package:path/path.dart' as path;
+import 'package:recase/recase.dart';
 
-import '../entity_name.dart';
 import '../generator.dart';
 
 /// Generator for Flutter Widget.
@@ -31,11 +31,11 @@ class WidgetGenerator extends Generator {
       : super(destinationFolder);
 
   factory WidgetGenerator(
-    EntityName classEntityName,
+    ReCase classEntityName,
     String destinationFolder,
   ) {
-    return new WidgetGenerator._(classEntityName.camelCased,
-        classEntityName.dashed, classEntityName.underscored, destinationFolder);
+    return new WidgetGenerator._(classEntityName.camelCase,
+        classEntityName.paramCase, classEntityName.snakeCase, destinationFolder);
   }
 
   // Gets a map from template file name to target file name.

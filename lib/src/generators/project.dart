@@ -7,8 +7,8 @@
 import 'dart:async';
 
 import 'package:path/path.dart' as path;
+import 'package:recase/recase.dart';
 
-import '../entity_name.dart';
 import '../generator.dart';
 import 'component.dart';
 
@@ -34,15 +34,15 @@ class ProjectGenerator extends Generator {
       this.name, this.description, this.component, String destinationFolder)
       : super(destinationFolder);
 
-  factory ProjectGenerator(EntityName projectEntityName,
-      String destinationFolder, EntityName componentClassEntityName) {
+  factory ProjectGenerator(ReCase projectEntityName,
+      String destinationFolder, ReCase componentClassEntityName) {
     destinationFolder =
-        path.join(destinationFolder, projectEntityName.underscored);
+        path.join(destinationFolder, projectEntityName.snakeCase);
     var component = new ComponentGenerator(
         componentClassEntityName, path.join(destinationFolder, 'lib'));
 
-    return new ProjectGenerator._(projectEntityName.underscored,
-        projectEntityName.spaced, component, destinationFolder);
+    return new ProjectGenerator._(projectEntityName.snakeCase,
+        projectEntityName.titleCase, component, destinationFolder);
   }
 
   // Gets a map from template file name to target file name.

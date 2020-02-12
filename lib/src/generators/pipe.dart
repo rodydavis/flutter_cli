@@ -7,8 +7,8 @@
 import 'dart:async';
 
 import 'package:path/path.dart' as path;
+import 'package:recase/recase.dart';
 
-import '../entity_name.dart';
 import '../generator.dart';
 
 /// Generator for Flutter pipe.
@@ -29,13 +29,13 @@ class PipeGenerator extends Generator {
       : super(destinationFolder);
 
   factory PipeGenerator(
-    EntityName classEntityName,
+    ReCase classEntityName,
     String destinationFolder,
   ) {
     return new PipeGenerator._(
-        classEntityName.camelCased,
-        classEntityName.lowerCamelCased,
-        classEntityName.underscored,
+        classEntityName.camelCase,
+        classEntityName.camelCase.toLowerCase(),
+        classEntityName.snakeCase,
         destinationFolder);
   }
 

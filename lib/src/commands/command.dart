@@ -6,8 +6,7 @@
 
 import 'package:args/args.dart';
 import 'package:args/command_runner.dart';
-
-import '../entity_name.dart';
+import 'package:recase/recase.dart';
 
 /// Base class for commands for ngflutter executable.
 abstract class NgDartCommand extends Command {
@@ -35,14 +34,14 @@ abstract class NgDartCommand extends Command {
   }
 
   /// Reads argument for current command and create an EntityName.
-  EntityName readArgAsEntityName(String errorMessage) =>
+  ReCase readArgAsEntityName(String errorMessage) =>
       getEntityName(readArg(errorMessage));
 
-  EntityName getEntityName(String entity) {
-    EntityName entityName;
+  ReCase getEntityName(String entity) {
+    ReCase entityName;
 
     try {
-      entityName = new EntityName(entity);
+      entityName = new ReCase(entity);
     } on ArgumentError catch (error) {
       throw new UsageException(error.message, '');
     }
