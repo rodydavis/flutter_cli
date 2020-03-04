@@ -25,6 +25,8 @@ dependencies:
   recase: ^3.0.0
 dev_dependencies:
   test: ^1.3.0
+  flutter:
+    sdk: flutter
 # flutter:
 #   assets:
 #     - lib/templates/

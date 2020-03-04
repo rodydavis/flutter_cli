@@ -23,7 +23,7 @@ class GenerateWidgetCommand extends NgDartCommand {
 
   GenerateWidgetCommand() {
     argParser.addOption(_pathOption,
-        abbr: 'p', help: 'Widget file path', defaultsTo: 'lib');
+        abbr: 'p', help: 'Widget file path', defaultsTo: 'lib/ui/common');
   }
 
   Future run() async {

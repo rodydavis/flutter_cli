@@ -6,10 +6,7 @@
 
 
 import 'command.dart';
-import 'generate_component.dart';
 import 'generate_test.dart';
-import 'package:ngflutter/src/commands/generate_directive.dart';
-import 'package:ngflutter/src/commands/generate_pipe.dart';
 import 'package:ngflutter/src/commands/generate_widget.dart';
 
 /// Handles the `generate` ngflutter command.
@@ -19,10 +16,7 @@ class GenerateCommand extends NgDartCommand {
   String get invocation => '${NgDartCommand.binaryName} generate <subcommand>';
 
   GenerateCommand() {
-    addSubcommand(new GenerateComponentCommand());
     addSubcommand(new GenerateTestCommand());
-    addSubcommand(new GenerateDirectiveCommand());
-    addSubcommand(new GeneratePipeCommand());
     addSubcommand(new GenerateWidgetCommand());
   }
 }

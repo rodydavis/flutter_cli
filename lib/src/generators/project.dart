@@ -10,7 +10,7 @@ import 'package:path/path.dart' as path;
 import 'package:recase/recase.dart';
 
 import '../generator.dart';
-import 'component.dart';
+import 'widget.dart';
 
 /// Generator for sample Flutter project.
 class ProjectGenerator extends Generator {
@@ -28,7 +28,7 @@ class ProjectGenerator extends Generator {
   final String description;
 
   /// Root component of this project.
-  final ComponentGenerator component;
+  final WidgetGenerator component;
 
   ProjectGenerator._(
       this.name, this.description, this.component, String destinationFolder)
@@ -38,8 +38,8 @@ class ProjectGenerator extends Generator {
       ReCase componentClassEntityName) {
     destinationFolder =
         path.join(destinationFolder, projectEntityName.snakeCase);
-    var component = new ComponentGenerator(
-        componentClassEntityName, path.join(destinationFolder, 'lib'));
+    var component = new WidgetGenerator(
+        componentClassEntityName, path.join(destinationFolder, 'lib/ui/home'));
 
     return new ProjectGenerator._(projectEntityName.snakeCase,
         projectEntityName.titleCase, component, destinationFolder);

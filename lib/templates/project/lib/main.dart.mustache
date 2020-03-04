@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:{{{name}}}/{{{component.targetName}}}.template.dart' as ng;
+import 'package:{{{name}}}/ui/home/screen.dart' as ng;
 
 void main() => runApp(MyApp());
 
-
 class MyApp extends StatelessWidget {
-  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: {{name}}',
+      title: '{{name}}',
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
-      home: ng.{{component.className}}NgFactory,
+      home: ng.HomeScreen(),
     );
   }
 }

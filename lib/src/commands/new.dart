@@ -32,7 +32,7 @@ class NewProjectCommand extends NgDartCommand {
     argParser.addOption(_rootComponentOption,
         abbr: 'r',
         help: 'Class name of root component.',
-        defaultsTo: 'AppComponent');
+        defaultsTo: 'Screen');
   }
 
   Future run() async {

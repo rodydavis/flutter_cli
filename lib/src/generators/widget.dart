@@ -13,7 +13,7 @@ import '../generator.dart';
 
 /// Generator for Flutter Widget.
 class WidgetGenerator extends Generator {
-  static const _templateFolder = 'widget';
+  static const _templateFolder = 'widgets';
   static const List<String> _templateFileNames = const [
     'widget.dart.mustache',
   ];
@@ -45,8 +45,10 @@ class WidgetGenerator extends Generator {
   Map<String, String> _getTemplateTargetPaths() {
     var results = <String, String>{};
     for (String templateFileName in _templateFileNames) {
-      results[path.join(_templateFolder, templateFileName)] =
-          '$targetName.${templateFileName.split('.')[1]}';
+      final _template = path.join(_templateFolder, templateFileName);
+      final _path = '$targetName.${templateFileName.split('.')[1]}';
+      print('Path: $_template -> $_path');
+      results[_template] = _path;
     }
 
     return results;
